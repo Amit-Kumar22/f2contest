@@ -27,17 +27,16 @@ function PrintDeveloperbyForEach() {
 
 function addData() {
   //Write your code here, just console.log
-  let newEntry= {id:4, name:"susan",age:"20",profession:"intern"};
-  arr.push(newEntry);
-  console.log(newEntry);
+  const arr2={id:4,name:"susan",age:"20",profession:"intern"};
+    arr.push(arr2);
+    console.log(arr);
 }
 
 function removeAdmin() {
   //Write your code here, just console.log
-  let remove=arr.filter(function (employee) {
-      return employee.profession != "admin";
-  });
-  console.log(remove);
+  const arr2=arr.filter(item => item.profession!="admin");
+    arr=arr2;
+    console.log(arr);
 }
 
 function concatenateArray() {
